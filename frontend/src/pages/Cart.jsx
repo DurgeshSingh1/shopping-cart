@@ -33,13 +33,15 @@ const Cart = () => {
       <div className="flex min-h-screen w-full flex-col py-5 gap-5 md:flex-row lg:p-[60px]">
         <div className="w-full text-slate-600 md:w-[70%] shadow-md border-[1px] bg-white p-2 rounded-lg">
           <div className="my-[40px] flex flex-col rounded-[4px] bg-slate-100  md:p-[15px]">
-            <h2 className="text-[18px] font-[700]">Your Cart</h2>
-            <h3>Total Itemes : {cart?.length} </h3>
+            <h2 className="text-[18px] font-[700]">Your Cart :</h2>
+            <h3>Total Items : {cart?.length} </h3>
           </div>
           <div className="flex flex-col gap-3 lg:ml-[120px]">{displaycart}</div>
           {!cart?.length && (
             <div className="flex flex-col justify-center items-center">
-              <p className="text-[24px] text-black font-bold">cart is empty</p>{" "}
+              <p className="text-[24px] text-black font-bold">
+                Cart is empty :
+              </p>{" "}
               <br />
               <PiSmileySadFill size={35} color="black" />
             </div>
